@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+<!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+<!-- GOOGLE FONTS -->
+</head>
+<body>
+    <br>
+    <div class="container">
+        <h1>BASIC CALCULATOR</h1>
+        <p> Click the button to multiply the product of 123 and 456</p>
+        <p id="equals">Answer:</p>
+
+        <button type="button" class="btn btn-primary" 
+            onclick="
+            let no1=123;
+            let no2=456;
+            let no3=no1*no2;
+            document.getElementById('equals').innerHTML='Answer: ' + no3;">Calculate</button>
+        <button type="button" class="btn btn-primary" 
+            onclick="window.location.reload()">Refresh</button>
+    </div>
+</body>
+</html>
